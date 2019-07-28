@@ -1,0 +1,41 @@
+header{
+  height: $header_height;
+  .container-fluid, .header-left, .header-right{
+    height: $header_height;
+  }
+  .header-left{
+    float: left;
+    line-height: $header_height;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .header-right{
+    float: left;
+    text-align: right;
+    ul li{
+      display: inline-block;
+      line-height: $header_height;
+      a{
+        padding: 10px 25px;
+        color: $blue_color;
+        text-decoration: none;
+        &:hover{
+          border-bottom: 2px solid $green_color;
+        }
+      }
+      a.border-b{
+        border-bottom: 2px solid $green_color;
+      }
+      a.sign-up{
+        color: white;
+        background-color: $orange_button;
+        &:hover{
+          background-color: $orange_button_hover;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

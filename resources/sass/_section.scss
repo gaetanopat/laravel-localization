@@ -1,0 +1,51 @@
+// per la sezione con sfondo bianco della homepage
+section.white-section{
+  height: 400px;
+  .container, .section-left, .section-right{
+    height: $section_height;
+  }
+  .section-left, .section-right{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .section-left{
+    h1{
+      color: $green_color;
+    }
+    p{
+      font-size: 18px;
+      color: $blue_color;
+    }
+    a.read_more{
+      padding: 10px 25px;
+      color: white;
+      background-color: $orange_button;
+      &:hover{
+        background-color: $orange_button_hover;
+        text-decoration: none;
+      }
+    }
+  }
+  .section-right{
+    text-align: right;
+    align-items: flex-end;
+    img{
+      width: 80%;
+      height: 80%;
+    }
+  }
+}
+
+// per le due sezioni privacy-pol e lavora-con-noi
+section.privacy-pol, section.lavora-con-noi{
+  font-size: 16px;
+  a strong{
+    color: #007bff;
+    &:hover{
+      color: #0056b3;
+    }
+  }
+}
